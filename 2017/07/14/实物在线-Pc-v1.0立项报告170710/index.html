@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>实物在线 | 眸瑞项目文档</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="立项报告,里程碑">
+    <meta name="description" content="《实物在线 PCV1.0》立项报告   文件标识： MRTF（AH）B2017007070001     当前版本： V1.0   编 写 人： 普贤（冯宇）   立项日期： 2017年7月7日   上线日期： 2017年8月1日   验 收 人： 芭蕉（张红娟）、巨灵神（郑巩）   验收日期： 2017年7月31日    一、项目背景 在现代社会之中，人与人之间的交流方式目前最为常见的是文字、图">
+<meta name="keywords" content="立项报告,里程碑">
+<meta property="og:type" content="article">
+<meta property="og:title" content="实物在线">
+<meta property="og:url" content="http://yoursite.com/2017/07/14/实物在线-Pc-v1.0立项报告170710/index.html">
+<meta property="og:site_name" content="眸瑞项目文档">
+<meta property="og:description" content="《实物在线 PCV1.0》立项报告   文件标识： MRTF（AH）B2017007070001     当前版本： V1.0   编 写 人： 普贤（冯宇）   立项日期： 2017年7月7日   上线日期： 2017年8月1日   验 收 人： 芭蕉（张红娟）、巨灵神（郑巩）   验收日期： 2017年7月31日    一、项目背景 在现代社会之中，人与人之间的交流方式目前最为常见的是文字、图">
+<meta property="og:updated_time" content="2017-07-15T01:06:39.321Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="实物在线">
+<meta name="twitter:description" content="《实物在线 PCV1.0》立项报告   文件标识： MRTF（AH）B2017007070001     当前版本： V1.0   编 写 人： 普贤（冯宇）   立项日期： 2017年7月7日   上线日期： 2017年8月1日   验 收 人： 芭蕉（张红娟）、巨灵神（郑巩）   验收日期： 2017年7月31日    一、项目背景 在现代社会之中，人与人之间的交流方式目前最为常见的是文字、图">
+    
+        <link rel="alternate" type="application/atom+xml" title="眸瑞项目文档" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="https://cdn2.iconfinder.com/data/icons/social-network-round-gloss-shine/128/gitlab.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">普贤</h5>
+          <a href="mailto:308861@qq.com" title="308861@qq.com" class="mail">308861@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/" target="_blank" >
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/shadowsocks/shadowsocks-windows" target="_blank" >
+                <i class="icon icon-lg icon-paper-plane"></i>
+                科学上网
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">实物在线</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">实物在线</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-07-14T09:22:02.304Z" itemprop="datePublished" class="page-time">
+  2017-07-14
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#《实物在线-PCV1-0》立项报告"><span class="post-toc-number">1.</span> <span class="post-toc-text">《实物在线 PCV1.0》立项报告</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一、项目背景"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">一、项目背景</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二、项目功能与目标"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">二、项目功能与目标</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三、项目团队"><span class="post-toc-number">1.0.3.</span> <span class="post-toc-text">三、项目团队</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#四、项目排期"><span class="post-toc-number">1.0.4.</span> <span class="post-toc-text">四、项目排期</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#五、项目总监审批："><span class="post-toc-number">1.0.5.</span> <span class="post-toc-text">五、项目总监审批：</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-实物在线-Pc-v1.0立项报告170710"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">实物在线</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-07-14 17:22:02" datetime="2017-07-14T09:22:02.304Z"  itemprop="datePublished">2017-07-14</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="《实物在线-PCV1-0》立项报告"><a href="#《实物在线-PCV1-0》立项报告" class="headerlink" title="《实物在线 PCV1.0》立项报告"></a>《实物在线 PCV1.0》立项报告</h1><table>
+<thead>
+<tr>
+<th>文件标识：</th>
+<th>MRTF（AH）B2017007070001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前版本：</td>
+<td>V1.0</td>
+</tr>
+<tr>
+<td>编 写 人：</td>
+<td>普贤（冯宇）</td>
+</tr>
+<tr>
+<td>立项日期：</td>
+<td>2017年7月7日</td>
+</tr>
+<tr>
+<td>上线日期：</td>
+<td>2017年8月1日</td>
+</tr>
+<tr>
+<td>验 收 人：</td>
+<td>芭蕉（张红娟）、巨灵神（郑巩）</td>
+</tr>
+<tr>
+<td>验收日期：</td>
+<td>2017年7月31日</td>
+</tr>
+</tbody>
+</table>
+<h3 id="一、项目背景"><a href="#一、项目背景" class="headerlink" title="一、项目背景"></a>一、项目背景</h3><blockquote>
+<p>在现代社会之中，人与人之间的交流方式目前最为常见的是文字、图片、语言3种方式； 那么在21世纪这个互联网技术全面应用的时代，如何进一步拓宽、延展人与人之间的交流与沟通？如何让人与人之间的交流更加趋于趣味化、简单化？那么，基于此利用虚拟与现实技术、同时从人的情感、心理层面进行需求挖掘，设计一款应用软件让普通大众通过操作实物的虚拟模型从而达到人与人、人与物情感的交流与传递。</p>
+</blockquote>
+<h3 id="二、项目功能与目标"><a href="#二、项目功能与目标" class="headerlink" title="二、项目功能与目标"></a>二、项目功能与目标</h3><p><strong>项目目标：</strong></p>
+<ol>
+<li>为普通大众提供一个在线娱乐的器物交流平台；</li>
+<li>为实体工厂提供一个实体商品全新媒介推广平台；</li>
+<li>为大众消费者提供个性化私人订制交易平台。</li>
+</ol>
+<p><strong>项目功能：</strong></p>
+<ol>
+<li>所有的模型都能在手机上改尺寸，贴材质，实物互相配置，并能拖到用户拍摄的环境中去.</li>
+<li>web端争取在10秒内打开，交互自然流畅.</li>
+<li>多屏互动，30人以内.</li>
+</ol>
+<h3 id="三、项目团队"><a href="#三、项目团队" class="headerlink" title="三、项目团队"></a>三、项目团队</h3><p>项目团队以公司高层及销售/运营部门为主导，网络部提供系统功能、性能和安全保证。<br>（附：项目主要成员表）</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>项目角色</th>
+<th>人员名称</th>
+<th>联系方式</th>
+<th>本人签字</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>项目总监</td>
+<td><strong>布袋</strong></td>
+<td>18910895582</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>项目经理（移动端）</td>
+<td>小钻风</td>
+<td>15274935144</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>项目经理（PC端）</td>
+<td>普贤</td>
+<td>17773135314</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>java开发组组长</td>
+<td><strong>增长</strong></td>
+<td>18670336934</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>后台开发</td>
+<td><strong>土地</strong></td>
+<td>18874075426</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>iOS开发组组长</td>
+<td>灵虚子</td>
+<td>18670728389</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>android开发组组长</td>
+<td>夜游神</td>
+<td>18674405175</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>测试经理</td>
+<td><strong>巨灵神</strong></td>
+<td>18570620202</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>产品经理（后台）</td>
+<td><strong>芭蕉</strong></td>
+<td>15573193989</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>产品经理（app端）</td>
+<td>阿儺</td>
+<td>13657333933</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>产品经理（Web前台）</td>
+<td><strong>李德升</strong></td>
+<td>18613982718</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>UI小组负责人</td>
+<td>天羽</td>
+<td>18507331311</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>前端页面负责人</td>
+<td><strong>赤脚</strong></td>
+<td>13511117207</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>Unity组组长</td>
+<td>水德星君</td>
+<td>13100318619</td>
+</tr>
+</tbody>
+</table>
+<h3 id="四、项目排期"><a href="#四、项目排期" class="headerlink" title="四、项目排期"></a>四、项目排期</h3><p>周期：项目计划在7月5日启动，8月5日完成，为期1个月。(<strong>需求文档delay一天，开发完成时间相应顺延</strong>)</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>项目里程碑</th>
+<th>关键产出物</th>
+<th>计划开始</th>
+<th>计划结束</th>
+<th>验收标准</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>项目启动</td>
+<td>《项目立项报告》、《项目排期表》</td>
+<td>7月5日</td>
+<td>7月5日</td>
+<td>经项目总监签字确认</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>原型设计</td>
+<td>《产品PRD》、《UI设计规范》、前端切图</td>
+<td>6月26日</td>
+<td>7月5日</td>
+<td>经项目总监、测试组签字确认</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>系统实现</td>
+<td>《详细设计》、《业务需求分析文档》、开发任务WBS、Coding</td>
+<td>7月5日</td>
+<td>8月5日</td>
+<td>经项目总监、测试组签字确认</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>系统测试</td>
+<td>《测试需求》、《测试用例》、《测试报告》</td>
+<td>8月1日</td>
+<td>8月5日</td>
+<td>经项目总监、测试组签字确认</td>
+<td>最终测试时间</td>
+</tr>
+<tr>
+<td>5</td>
+<td>上线准备</td>
+<td>《项目环境运维文档》、《资源确认单》</td>
+<td>7月25日</td>
+<td>8月4日</td>
+<td>经项目总监、网络组签字确认</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>系统上线</td>
+<td>《部署方案说明》</td>
+<td>8月5日</td>
+<td>8月10日</td>
+<td>经项目总监、网络组签字确认</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>项目验收</td>
+<td>《项目总结报告》</td>
+<td>8月10日</td>
+<td>8月15日</td>
+<td>经项目总监签字确认</td>
+<td>整理项目相关文档</td>
+</tr>
+</tbody>
+</table>
+<p>其它时间节点安排：</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>项目里程碑</th>
+<th>计划开始</th>
+<th>计划结束</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>完成用户中心</td>
+<td>6.15</td>
+<td>7.13</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>完成模型库后台系统</td>
+<td>6.15</td>
+<td>7.15</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>完成移动端接口</td>
+<td>6.15</td>
+<td>7.21</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>实物在线PC前端和运营后台</td>
+<td>7.17</td>
+<td>7.25</td>
+<td>尚未开始</td>
+</tr>
+</tbody>
+</table>
+<h3 id="五、项目总监审批："><a href="#五、项目总监审批：" class="headerlink" title="五、项目总监审批："></a>五、项目总监审批：</h3>
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-07-15T01:06:39.321Z" itemprop="dateUpdated">2017-07-15 09:06:39</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/07/14/实物在线-Pc-v1.0立项报告170710/" target="_blank" rel="external">http://yoursite.com/2017/07/14/实物在线-Pc-v1.0立项报告170710/</a>
+        
+    </div>
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="https://cdn2.iconfinder.com/data/icons/social-network-round-gloss-shine/128/gitlab.png" alt="普贤">
+            普贤
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/立项报告/">立项报告</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/里程碑/">里程碑</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/07/14/实物在线-Pc-v1.0立项报告170710/&title=《实物在线》 — 眸瑞项目文档&pic=https://cdn2.iconfinder.com/data/icons/social-network-round-gloss-shine/128/gitlab.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/07/14/实物在线-Pc-v1.0立项报告170710/&title=《实物在线》 — 眸瑞项目文档&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/07/14/实物在线-Pc-v1.0立项报告170710/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《实物在线》 — 眸瑞项目文档&url=http://yoursite.com/2017/07/14/实物在线-Pc-v1.0立项报告170710/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/07/14/实物在线-Pc-v1.0立项报告170710/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>普贤 &copy; 2015 - 2017</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/07/14/实物在线-Pc-v1.0立项报告170710/&title=《实物在线》 — 眸瑞项目文档&pic=https://cdn2.iconfinder.com/data/icons/social-network-round-gloss-shine/128/gitlab.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/07/14/实物在线-Pc-v1.0立项报告170710/&title=《实物在线》 — 眸瑞项目文档&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/07/14/实物在线-Pc-v1.0立项报告170710/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《实物在线》 — 眸瑞项目文档&url=http://yoursite.com/2017/07/14/实物在线-Pc-v1.0立项报告170710/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/07/14/实物在线-Pc-v1.0立项报告170710/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2017/07/14/实物在线-Pc-v1.0立项报告170710/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>眸瑞项目文档</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-07-15T01:06:39.321Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>普贤</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>实物在线</title>
+    <link href="http://yoursite.com/2017/07/14/%E5%AE%9E%E7%89%A9%E5%9C%A8%E7%BA%BF-Pc-v1.0%E7%AB%8B%E9%A1%B9%E6%8A%A5%E5%91%8A170710/"/>
+    <id>http://yoursite.com/2017/07/14/实物在线-Pc-v1.0立项报告170710/</id>
+    <published>2017-07-14T09:22:02.304Z</published>
+    <updated>2017-07-15T01:06:39.321Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="《实物在线-PCV1-0》立项报告"><a href="#《实物在线-PCV1-0》立项报告" class="headerlink" title="《实物在线 PCV1.0》立项报告"></a>《实物在线 PCV1.0》立项报告</h1><table>
+<thead>
+<tr>
+<th>文件标识：</th>
+<th>MRTF（AH）B2017007070001</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>当前版本：</td>
+<td>V1.0</td>
+</tr>
+<tr>
+<td>编 写 人：</td>
+<td>普贤（冯宇）</td>
+</tr>
+<tr>
+<td>立项日期：</td>
+<td>2017年7月7日</td>
+</tr>
+<tr>
+<td>上线日期：</td>
+<td>2017年8月1日</td>
+</tr>
+<tr>
+<td>验 收 人：</td>
+<td>芭蕉（张红娟）、巨灵神（郑巩）</td>
+</tr>
+<tr>
+<td>验收日期：</td>
+<td>2017年7月31日</td>
+</tr>
+</tbody>
+</table>
+<h3 id="一、项目背景"><a href="#一、项目背景" class="headerlink" title="一、项目背景"></a>一、项目背景</h3><blockquote>
+<p>在现代社会之中，人与人之间的交流方式目前最为常见的是文字、图片、语言3种方式； 那么在21世纪这个互联网技术全面应用的时代，如何进一步拓宽、延展人与人之间的交流与沟通？如何让人与人之间的交流更加趋于趣味化、简单化？那么，基于此利用虚拟与现实技术、同时从人的情感、心理层面进行需求挖掘，设计一款应用软件让普通大众通过操作实物的虚拟模型从而达到人与人、人与物情感的交流与传递。</p>
+</blockquote>
+<h3 id="二、项目功能与目标"><a href="#二、项目功能与目标" class="headerlink" title="二、项目功能与目标"></a>二、项目功能与目标</h3><p><strong>项目目标：</strong></p>
+<ol>
+<li>为普通大众提供一个在线娱乐的器物交流平台；</li>
+<li>为实体工厂提供一个实体商品全新媒介推广平台；</li>
+<li>为大众消费者提供个性化私人订制交易平台。</li>
+</ol>
+<p><strong>项目功能：</strong></p>
+<ol>
+<li>所有的模型都能在手机上改尺寸，贴材质，实物互相配置，并能拖到用户拍摄的环境中去.</li>
+<li>web端争取在10秒内打开，交互自然流畅.</li>
+<li>多屏互动，30人以内.</li>
+</ol>
+<h3 id="三、项目团队"><a href="#三、项目团队" class="headerlink" title="三、项目团队"></a>三、项目团队</h3><p>项目团队以公司高层及销售/运营部门为主导，网络部提供系统功能、性能和安全保证。<br>（附：项目主要成员表）</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>项目角色</th>
+<th>人员名称</th>
+<th>联系方式</th>
+<th>本人签字</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>项目总监</td>
+<td><strong>布袋</strong></td>
+<td>18910895582</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>项目经理（移动端）</td>
+<td>小钻风</td>
+<td>15274935144</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>项目经理（PC端）</td>
+<td>普贤</td>
+<td>17773135314</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>java开发组组长</td>
+<td><strong>增长</strong></td>
+<td>18670336934</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>后台开发</td>
+<td><strong>土地</strong></td>
+<td>18874075426</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>iOS开发组组长</td>
+<td>灵虚子</td>
+<td>18670728389</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>android开发组组长</td>
+<td>夜游神</td>
+<td>18674405175</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>测试经理</td>
+<td><strong>巨灵神</strong></td>
+<td>18570620202</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>产品经理（后台）</td>
+<td><strong>芭蕉</strong></td>
+<td>15573193989</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>产品经理（app端）</td>
+<td>阿儺</td>
+<td>13657333933</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>产品经理（Web前台）</td>
+<td><strong>李德升</strong></td>
+<td>18613982718</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>UI小组负责人</td>
+<td>天羽</td>
+<td>18507331311</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>前端页面负责人</td>
+<td><strong>赤脚</strong></td>
+<td>13511117207</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>Unity组组长</td>
+<td>水德星君</td>
+<td>13100318619</td>
+</tr>
+</tbody>
+</table>
+<h3 id="四、项目排期"><a href="#四、项目排期" class="headerlink" title="四、项目排期"></a>四、项目排期</h3><p>周期：项目计划在7月5日启动，8月5日完成，为期1个月。(<strong>需求文档delay一天，开发完成时间相应顺延</strong>)</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>项目里程碑</th>
+<th>关键产出物</th>
+<th>计划开始</th>
+<th>计划结束</th>
+<th>验收标准</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>项目启动</td>
+<td>《项目立项报告》、《项目排期表》</td>
+<td>7月5日</td>
+<td>7月5日</td>
+<td>经项目总监签字确认</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>原型设计</td>
+<td>《产品PRD》、《UI设计规范》、前端切图</td>
+<td>6月26日</td>
+<td>7月5日</td>
+<td>经项目总监、测试组签字确认</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>系统实现</td>
+<td>《详细设计》、《业务需求分析文档》、开发任务WBS、Coding</td>
+<td>7月5日</td>
+<td>8月5日</td>
+<td>经项目总监、测试组签字确认</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>系统测试</td>
+<td>《测试需求》、《测试用例》、《测试报告》</td>
+<td>8月1日</td>
+<td>8月5日</td>
+<td>经项目总监、测试组签字确认</td>
+<td>最终测试时间</td>
+</tr>
+<tr>
+<td>5</td>
+<td>上线准备</td>
+<td>《项目环境运维文档》、《资源确认单》</td>
+<td>7月25日</td>
+<td>8月4日</td>
+<td>经项目总监、网络组签字确认</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>系统上线</td>
+<td>《部署方案说明》</td>
+<td>8月5日</td>
+<td>8月10日</td>
+<td>经项目总监、网络组签字确认</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>项目验收</td>
+<td>《项目总结报告》</td>
+<td>8月10日</td>
+<td>8月15日</td>
+<td>经项目总监签字确认</td>
+<td>整理项目相关文档</td>
+</tr>
+</tbody>
+</table>
+<p>其它时间节点安排：</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>项目里程碑</th>
+<th>计划开始</th>
+<th>计划结束</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>完成用户中心</td>
+<td>6.15</td>
+<td>7.13</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>完成模型库后台系统</td>
+<td>6.15</td>
+<td>7.15</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>完成移动端接口</td>
+<td>6.15</td>
+<td>7.21</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>实物在线PC前端和运营后台</td>
+<td>7.17</td>
+<td>7.25</td>
+<td>尚未开始</td>
+</tr>
+</tbody>
+</table>
+<h3 id="五、项目总监审批："><a href="#五、项目总监审批：" class="headerlink" title="五、项目总监审批："></a>五、项目总监审批：</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;《实物在线-PCV1-0》立项报告&quot;&gt;&lt;a href=&quot;#《实物在线-PCV1-0》立项报告&quot; class=&quot;headerlink&quot; title=&quot;《实物在线 PCV1.0》立项报告&quot;&gt;&lt;/a&gt;《实物在线 PCV1.0》立项报告&lt;/h1&gt;&lt;table&gt;
+&lt;thea
+    
+    </summary>
+    
+    
+      <category term="立项报告" scheme="http://yoursite.com/tags/%E7%AB%8B%E9%A1%B9%E6%8A%A5%E5%91%8A/"/>
+    
+      <category term="里程碑" scheme="http://yoursite.com/tags/%E9%87%8C%E7%A8%8B%E7%A2%91/"/>
+    
+  </entry>
+  
+</feed>
