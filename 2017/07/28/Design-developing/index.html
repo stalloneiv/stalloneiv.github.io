@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Design_developing | 眸瑞项目文档</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="概要设计概要设计是一个将用户目标与需求转换成具体界面设计方案的重要阶段，在这里我们需要由前一阶段的需求分析得到软件（包括移动应用和网站等）的设计和数据结构。 其通常是将复杂的系统按照不同的功能进行模块化，理清模块之间的层次关系以及调用关系、确定模块间的接口以及用户界面。而数据结构部分则是要根据数据的特征来确定数据的结构并设计出相应的数据库。 软件设计的流程软件的设计一般有如下流程： 1234567">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Design_developing">
+<meta property="og:url" content="http://yoursite.com/2017/07/28/Design-developing/index.html">
+<meta property="og:site_name" content="眸瑞项目文档">
+<meta property="og:description" content="概要设计概要设计是一个将用户目标与需求转换成具体界面设计方案的重要阶段，在这里我们需要由前一阶段的需求分析得到软件（包括移动应用和网站等）的设计和数据结构。 其通常是将复杂的系统按照不同的功能进行模块化，理清模块之间的层次关系以及调用关系、确定模块间的接口以及用户界面。而数据结构部分则是要根据数据的特征来确定数据的结构并设计出相应的数据库。 软件设计的流程软件的设计一般有如下流程： 1234567">
+<meta property="og:updated_time" content="2017-07-28T07:26:58.814Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Design_developing">
+<meta name="twitter:description" content="概要设计概要设计是一个将用户目标与需求转换成具体界面设计方案的重要阶段，在这里我们需要由前一阶段的需求分析得到软件（包括移动应用和网站等）的设计和数据结构。 其通常是将复杂的系统按照不同的功能进行模块化，理清模块之间的层次关系以及调用关系、确定模块间的接口以及用户界面。而数据结构部分则是要根据数据的特征来确定数据的结构并设计出相应的数据库。 软件设计的流程软件的设计一般有如下流程： 1234567">
+    
+        <link rel="alternate" type="application/atom+xml" title="眸瑞项目文档" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="https://cdn2.iconfinder.com/data/icons/social-network-round-gloss-shine/128/gitlab.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">普贤</h5>
+          <a href="mailto:308861@qq.com" title="308861@qq.com" class="mail">308861@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/" target="_blank" >
+                <i class="icon icon-lg icon-link"></i>
+                测试
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/shadowsocks/shadowsocks-windows" target="_blank" >
+                <i class="icon icon-lg icon-paper-plane"></i>
+                科学上网
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Design_developing</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="搜尋">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Design_developing</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-07-28T07:25:30.000Z" itemprop="datePublished" class="page-time">
+  2017-07-28
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#概要设计"><span class="post-toc-number">1.</span> <span class="post-toc-text">概要设计</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#软件设计的流程"><span class="post-toc-number">2.</span> <span class="post-toc-text">软件设计的流程</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#概要设计说明书如何去写"><span class="post-toc-number">3.</span> <span class="post-toc-text">概要设计说明书如何去写</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#总体设计"><span class="post-toc-number">4.</span> <span class="post-toc-text">总体设计</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#接口设计"><span class="post-toc-number">5.</span> <span class="post-toc-text">接口设计</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#运行设计"><span class="post-toc-number">6.</span> <span class="post-toc-text">运行设计</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#模块设计"><span class="post-toc-number">7.</span> <span class="post-toc-text">模块设计</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#数据结构"><span class="post-toc-number">8.</span> <span class="post-toc-text">数据结构</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#容灾设计"><span class="post-toc-number">9.</span> <span class="post-toc-text">容灾设计</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#监控设计"><span class="post-toc-number">10.</span> <span class="post-toc-text">监控设计</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#界面设计"><span class="post-toc-number">11.</span> <span class="post-toc-text">界面设计</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#概要设计的使用"><span class="post-toc-number">12.</span> <span class="post-toc-text">概要设计的使用</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-Design-developing"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Design_developing</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-07-28 15:25:30" datetime="2017-07-28T07:25:30.000Z"  itemprop="datePublished">2017-07-28</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="概要设计"><a href="#概要设计" class="headerlink" title="概要设计"></a><strong>概要设计</strong></h2><p>概要设计是一个将用户目标与需求转换成具体界面设计方案的重要阶段，在这里我们需要由前一阶段的需求分析得到软件（包括移动应用和网站等）的设计和<a href="http://lib.csdn.net/base/datastructure" target="_blank" rel="external">数据结构</a>。</p>
+<p>其通常是将复杂的系统按照不同的功能进行模块化，理清模块之间的层次关系以及调用关系、确定模块间的接口以及用户界面。而数据结构部分则是要根据数据的特征来确定数据的结构并设计出相应的<a href="http://lib.csdn.net/base/mysql" target="_blank" rel="external">数据库</a>。</p>
+<h2 id="软件设计的流程"><a href="#软件设计的流程" class="headerlink" title="软件设计的流程"></a><strong>软件设计的流程</strong></h2><p>软件的设计一般有如下流程：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">1，需求分析</div><div class="line">    在这一阶段,我们需要理清楚到底要解决哪些问题</div><div class="line">    并完成“软件需求说明书”</div><div class="line">2，概要设计</div><div class="line">    在这一阶段，根据上一阶段的需求来确定总体的实现方案</div><div class="line">    确定整个软件的大体布局</div><div class="line">    各模块的功能以及模块之间的衔接</div><div class="line">    模块与外部系统的关系，</div><div class="line">    并完成“软件概要设计说明书”</div><div class="line">3，详细设计</div><div class="line">    在这一阶段，我们应该开始探讨每个模块该如何具体实现</div><div class="line">    每个实现中需要哪些算法、属性、参数、数据结构、接口</div><div class="line">    并完成“软件详细设计说明书”1234567891011121312345678910111213</div></pre></td></tr></table></figure>
+<h2 id="概要设计说明书如何去写"><a href="#概要设计说明书如何去写" class="headerlink" title="概要设计说明书如何去写"></a><strong>概要设计说明书如何去写</strong></h2><h2 id="总体设计"><a href="#总体设计" class="headerlink" title="总体设计"></a>总体设计</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">需求</div><div class="line">目标</div><div class="line">运行环境</div><div class="line">局限</div><div class="line">结构</div><div class="line">未解决的问题123456123456</div></pre></td></tr></table></figure>
+<p>使读者有个全局观，对后面的模块设计有准备。</p>
+<h2 id="接口设计"><a href="#接口设计" class="headerlink" title="接口设计"></a>接口设计</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">外部接口</div><div class="line">内部接口</div><div class="line">用户接口123123</div></pre></td></tr></table></figure>
+<p>这些接口不是编程中的interface，而是软件的可用资源。使读者可以了解到有哪些可供使用的资源。</p>
+<h2 id="运行设计"><a href="#运行设计" class="headerlink" title="运行设计"></a>运行设计</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">模块组合</div><div class="line">运行时间与控制1212</div></pre></td></tr></table></figure>
+<h2 id="模块设计"><a href="#模块设计" class="headerlink" title="模块设计"></a>模块设计</h2><p>这是整个概要设计的核心，它需要指明：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">每个模块做什么，实现了哪些功能</div><div class="line">每个模块怎么做，包括输入、输出、逻辑、与其他模块的衔接、接口</div><div class="line">每个模块所处的逻辑位置</div><div class="line">每个模块所处的物理位置</div><div class="line">每个模块的层次结构，可以用软件框图来展示</div><div class="line">每个模块的关系，诸如依赖、通信等关系</div><div class="line">每个模块的接口，模块之间如何传递信息以及信息本身的结构</div><div class="line">每个模块的处理方式，其需要满足于哪些功能或性能上的要求1234567812345678</div></pre></td></tr></table></figure>
+<h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">逻辑结构</div><div class="line">物理结构1212</div></pre></td></tr></table></figure>
+<h2 id="容灾设计"><a href="#容灾设计" class="headerlink" title="容灾设计"></a>容灾设计</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">出错信息</div><div class="line">补救措施</div><div class="line">系统维护设计123123</div></pre></td></tr></table></figure>
+<h2 id="监控设计"><a href="#监控设计" class="headerlink" title="监控设计"></a>监控设计</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">各个模块的组合、控制以及模块运行的时间11</div></pre></td></tr></table></figure>
+<h2 id="界面设计"><a href="#界面设计" class="headerlink" title="界面设计"></a>界面设计</h2><p>软件的主题界面设计</p>
+<hr>
+<p>还有诸如“安全设计”等都可以考虑进来。</p>
+<p>对于设计的准则、代码的规范、接口的约定、命名的规则等都需要团队共同协商。</p>
+<h2 id="概要设计的使用"><a href="#概要设计的使用" class="headerlink" title="概要设计的使用"></a><strong>概要设计的使用</strong></h2><p>概要设计是用来评价软件整体设计可行性的重要支撑，由于每个模块已经开始确定，可以很好的检查已有的模块是否已经足够完整，还可以用于评估工作量以及知道下一步的计划，但是概要设计不应该太重视具体的业务流程以及细节实现，它只是一个模块化的纲领。</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最後更新時間：<time datetime="2017-07-28T07:26:58.814Z" itemprop="dateUpdated">2017-07-28 15:26:58</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/07/28/Design-developing/" target="_blank" rel="external">http://yoursite.com/2017/07/28/Design-developing/</a>
+        
+    </div>
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="https://cdn2.iconfinder.com/data/icons/social-network-round-gloss-shine/128/gitlab.png" alt="普贤">
+            普贤
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/07/28/Design-developing/&title=《Design_developing》 — 眸瑞项目文档&pic=https://cdn2.iconfinder.com/data/icons/social-network-round-gloss-shine/128/gitlab.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/07/28/Design-developing/&title=《Design_developing》 — 眸瑞项目文档&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/07/28/Design-developing/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Design_developing》 — 眸瑞项目文档&url=http://yoursite.com/2017/07/28/Design-developing/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/07/28/Design-developing/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/07/19/Faq/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Faq</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'https://stalloneiv-github-io.disqus.com';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>本部落格係採用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW">創用 CC 姓名標示 4.0 國際 授權條款授權</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>普贤 &copy; 2015 - 2017</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/07/28/Design-developing/&title=《Design_developing》 — 眸瑞项目文档&pic=https://cdn2.iconfinder.com/data/icons/social-network-round-gloss-shine/128/gitlab.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/07/28/Design-developing/&title=《Design_developing》 — 眸瑞项目文档&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/07/28/Design-developing/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Design_developing》 — 眸瑞项目文档&url=http://yoursite.com/2017/07/28/Design-developing/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/07/28/Design-developing/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2017/07/28/Design-developing/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

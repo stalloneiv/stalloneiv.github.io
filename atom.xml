@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-19T08:05:29.201Z</updated>
+  <updated>2017-07-28T07:26:58.814Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Design_developing</title>
+    <link href="http://yoursite.com/2017/07/28/Design-developing/"/>
+    <id>http://yoursite.com/2017/07/28/Design-developing/</id>
+    <published>2017-07-28T07:25:30.000Z</published>
+    <updated>2017-07-28T07:26:58.814Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="概要设计"><a href="#概要设计" class="headerlink" title="概要设计"></a><strong>概要设计</strong></h2><p>概要设计是一个将用户目标与需求转换成具体界面设计方案的重要阶段，在这里我们需要由前一阶段的需求分析得到软件（包括移动应用和网站等）的设计和<a href="http://lib.csdn.net/base/datastructure" target="_blank" rel="external">数据结构</a>。</p>
+<p>其通常是将复杂的系统按照不同的功能进行模块化，理清模块之间的层次关系以及调用关系、确定模块间的接口以及用户界面。而数据结构部分则是要根据数据的特征来确定数据的结构并设计出相应的<a href="http://lib.csdn.net/base/mysql" target="_blank" rel="external">数据库</a>。</p>
+<h2 id="软件设计的流程"><a href="#软件设计的流程" class="headerlink" title="软件设计的流程"></a><strong>软件设计的流程</strong></h2><p>软件的设计一般有如下流程：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">1，需求分析</div><div class="line">    在这一阶段,我们需要理清楚到底要解决哪些问题</div><div class="line">    并完成“软件需求说明书”</div><div class="line">2，概要设计</div><div class="line">    在这一阶段，根据上一阶段的需求来确定总体的实现方案</div><div class="line">    确定整个软件的大体布局</div><div class="line">    各模块的功能以及模块之间的衔接</div><div class="line">    模块与外部系统的关系，</div><div class="line">    并完成“软件概要设计说明书”</div><div class="line">3，详细设计</div><div class="line">    在这一阶段，我们应该开始探讨每个模块该如何具体实现</div><div class="line">    每个实现中需要哪些算法、属性、参数、数据结构、接口</div><div class="line">    并完成“软件详细设计说明书”1234567891011121312345678910111213</div></pre></td></tr></table></figure>
+<h2 id="概要设计说明书如何去写"><a href="#概要设计说明书如何去写" class="headerlink" title="概要设计说明书如何去写"></a><strong>概要设计说明书如何去写</strong></h2><h2 id="总体设计"><a href="#总体设计" class="headerlink" title="总体设计"></a>总体设计</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">需求</div><div class="line">目标</div><div class="line">运行环境</div><div class="line">局限</div><div class="line">结构</div><div class="line">未解决的问题123456123456</div></pre></td></tr></table></figure>
+<p>使读者有个全局观，对后面的模块设计有准备。</p>
+<h2 id="接口设计"><a href="#接口设计" class="headerlink" title="接口设计"></a>接口设计</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">外部接口</div><div class="line">内部接口</div><div class="line">用户接口123123</div></pre></td></tr></table></figure>
+<p>这些接口不是编程中的interface，而是软件的可用资源。使读者可以了解到有哪些可供使用的资源。</p>
+<h2 id="运行设计"><a href="#运行设计" class="headerlink" title="运行设计"></a>运行设计</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">模块组合</div><div class="line">运行时间与控制1212</div></pre></td></tr></table></figure>
+<h2 id="模块设计"><a href="#模块设计" class="headerlink" title="模块设计"></a>模块设计</h2><p>这是整个概要设计的核心，它需要指明：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">每个模块做什么，实现了哪些功能</div><div class="line">每个模块怎么做，包括输入、输出、逻辑、与其他模块的衔接、接口</div><div class="line">每个模块所处的逻辑位置</div><div class="line">每个模块所处的物理位置</div><div class="line">每个模块的层次结构，可以用软件框图来展示</div><div class="line">每个模块的关系，诸如依赖、通信等关系</div><div class="line">每个模块的接口，模块之间如何传递信息以及信息本身的结构</div><div class="line">每个模块的处理方式，其需要满足于哪些功能或性能上的要求1234567812345678</div></pre></td></tr></table></figure>
+<h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">逻辑结构</div><div class="line">物理结构1212</div></pre></td></tr></table></figure>
+<h2 id="容灾设计"><a href="#容灾设计" class="headerlink" title="容灾设计"></a>容灾设计</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">出错信息</div><div class="line">补救措施</div><div class="line">系统维护设计123123</div></pre></td></tr></table></figure>
+<h2 id="监控设计"><a href="#监控设计" class="headerlink" title="监控设计"></a>监控设计</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">各个模块的组合、控制以及模块运行的时间11</div></pre></td></tr></table></figure>
+<h2 id="界面设计"><a href="#界面设计" class="headerlink" title="界面设计"></a>界面设计</h2><p>软件的主题界面设计</p>
+<hr>
+<p>还有诸如“安全设计”等都可以考虑进来。</p>
+<p>对于设计的准则、代码的规范、接口的约定、命名的规则等都需要团队共同协商。</p>
+<h2 id="概要设计的使用"><a href="#概要设计的使用" class="headerlink" title="概要设计的使用"></a><strong>概要设计的使用</strong></h2><p>概要设计是用来评价软件整体设计可行性的重要支撑，由于每个模块已经开始确定，可以很好的检查已有的模块是否已经足够完整，还可以用于评估工作量以及知道下一步的计划，但是概要设计不应该太重视具体的业务流程以及细节实现，它只是一个模块化的纲领。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;概要设计&quot;&gt;&lt;a href=&quot;#概要设计&quot; class=&quot;headerlink&quot; title=&quot;概要设计&quot;&gt;&lt;/a&gt;&lt;strong&gt;概要设计&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;概要设计是一个将用户目标与需求转换成具体界面设计方案的重要阶段，在这里我们需要由前一阶段的
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Faq</title>
